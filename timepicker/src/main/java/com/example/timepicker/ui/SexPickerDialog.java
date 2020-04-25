@@ -142,6 +142,11 @@ public class SexPickerDialog extends DialogFragment implements View.OnClickListe
             return this;
         }
 
+        public SexPickerDialog.Builder setCheckedSex(String sex) {
+            mPickerConfig.mCheckedSex = sex;
+            return this;
+        }
+
         public SexPickerDialog.Builder setSureColor(String color) {
             mPickerConfig.mSureColor = color;
             return this;

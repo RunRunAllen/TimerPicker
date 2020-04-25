@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.example.timepicker.R;
 import com.example.timepicker.adapter.ArrayWheelAdapter;
+import com.example.timepicker.config.DefaultConfig;
 import com.example.timepicker.config.PickerConfig;
 import com.example.timepicker.wheel.OnWheelChangedListener;
 import com.example.timepicker.wheel.WheelView;
@@ -20,10 +21,10 @@ public class SexWheel {
     public SexWheel(Context context, View view, PickerConfig mPickerConfig) {
         mContext = context;
         sexArray = mContext.getResources().getStringArray(R.array.sex);
-        initialize(view);
+        initialize(view, mPickerConfig);
     }
 
-    private void initialize(View view) {
+    private void initialize(View view, PickerConfig mPickerConfig) {
         sex = (WheelView) view.findViewById(R.id.sex);
         sex.addChangingListener(new OnWheelChangedListener() {
             @Override
@@ -34,7 +35,11 @@ public class SexWheel {
         });
         customWheelSexAdapter = new ArrayWheelAdapter(mContext, sexArray);
         sex.setViewAdapter(customWheelSexAdapter);
-        sex.setCurrentItem(0);
+        if (mPickerConfig.mCheckedSex.equals(DefaultConfig.CHECKED_SEX)) {
+            sex.setCurrentItem(0);
+        } else {
+            sex.setCurrentItem(1);
+        }
     }
 
     public String getCurrentItem() {

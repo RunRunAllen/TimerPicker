@@ -23,6 +23,8 @@ public class PickerConfig {
 
     public String mTitleString = DefaultConfig.TITLE;
 
+    public String mCheckedSex = DefaultConfig.CHECKED_SEX;
+
     public int mWheelTVNormalColor = DefaultConfig.TV_NORMAL_COLOR;
     public int mWheelTVSelectorColor = DefaultConfig.TV_SELECTOR_COLOR;
     public int mWheelTVSize = DefaultConfig.TV_SIZE;
