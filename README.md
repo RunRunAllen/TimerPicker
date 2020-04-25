@@ -19,6 +19,6 @@
 	}
  
 方式二： 
-       implementation 'com.timerpicker:timepicker:1.0.0'
+       implementation 'com.timerpicker:timepicker:1.1.0'
 
 
