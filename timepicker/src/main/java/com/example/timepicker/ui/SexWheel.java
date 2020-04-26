@@ -35,7 +35,7 @@ public class SexWheel {
         });
         customWheelSexAdapter = new ArrayWheelAdapter(mContext, sexArray);
         sex.setViewAdapter(customWheelSexAdapter);
-        if (mPickerConfig.mCheckedSex.equals(DefaultConfig.CHECKED_SEX)) {
+        if (mPickerConfig.mCheckedSex!=null&&mPickerConfig.mCheckedSex.equals(DefaultConfig.CHECKED_SEX)) {
             sex.setCurrentItem(1);
         } else {
             sex.setCurrentItem(0);
