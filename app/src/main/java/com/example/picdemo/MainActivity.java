@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .build();
         mSex = new SexPickerDialog.Builder()
                 .setType(Type.SEX)
-                .setCheckedSex("男")
+                .setCheckedSex("")
                 .setTitleStringId(getString(R.string.app_name))
                 .setCallBack(this)
                 .build();

@@ -31,7 +31,7 @@ public class DefaultConfig {
     public static String CANCEL = "取消";
     public static String SURE = "确定";
     public static String TITLE = "TimePicker";
-    public static String CHECKED_SEX = "男";
+    public static String CHECKED_SEX = "女";
     public static String YEAR = "年";
     public static String MONTH = "月";
     public static String DAY = "日";
